@@ -1,0 +1,148 @@
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #86efd5;
+	padding: 1rem;
+}
+
+.my-image {
+	width: 50px;
+	height: 50px;
+	
+	object-position: center
+}
+
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-right: 1rem;
+}
+
+nav a {
+	color: #0c707d;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+nav a:hover {
+	color: #2f088a;
+}
+
+section {
+	padding: 2rem;
+}
+
+section h2 {
+	margin-bottom: 1rem;
+}
+
+.work-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.work-gallery li {
+	flex-basis: calc(33.33% - 1rem);
+	margin-bottom: 2rem;
+}
+
+.work-gallery li a {
+	display: block;
+	position: relative;
+}
+
+.work-gallery li  h3 {
+	transform: translateY(-50%);
+}
+.work-gallery li a:hover h3 {
+	transform: translateY(-50%);
+}
+
+
+
+.work-gallery li h3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 0.5rem;
+	margin: 0;
+	transform: translateY(100%);
+	transition: all 0.3s ease;
+}
+
+form label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	color: #333;
+
+}
+form input,
+form textarea {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus {
+	outline: none;
+	border-color: #b1f3fd;
+}
+
+form button[type="submit"] {
+	background-color: #6289df;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+	background-color: #32326c;
+}
+
+footer {
+	background-color: #6bd3e1;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 2rem;
+}
+.secondimg {
+	width: 50px;
+	height: 50px;
+	
+	object-position: center
+}
